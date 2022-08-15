@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
-html{
-    
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+@media(max-width: 506px){
+    .menu{
+        display: none;
+    }
+}
+@media(max-width: 1300px){
+    main{
+        height: 43vw;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 body{
     background-color: #2d2d2d;
@@ -27,11 +40,7 @@ header{
     text-decoration: none;
     margin: 0 21px 0 21px;
 }
-@media(max-width: 506px){
-    .menu{
-        display: none;
-    }
-}
+
 .menu a:hover, .menu a.active{
     color:#fff
 }
@@ -51,15 +60,29 @@ main{
     justify-content: center;
     align-items: center;
 }
-.rectangle{
-    
-    width: 29vw;
-    height: 29vw;
+.radial_gradient{
+    position: absolute;
+    width: 649px;
+    height: 665px;
 
+    /* background: radial-gradient(38.42% 38.42% at 50% 50%, #7996FC 0%, rgba(121, 150, 252, 0) 100%); */
+    background: radial-gradient(40% 40% at 50% 45%, #7996FC 0%, rgba(121, 150, 252, 0) 100%);
+    filter: drop-shadow(0px 0px 15px rgba(121, 150, 252, 0.15));
+}
+.rectangle{
+    display: flex;
+    width: 439.87px;
+    height: 439.87px;
+    justify-content: center;
+    align-items: center;
 
     background: #FFFFFF;
     border-radius: 20%;
     transform: rotate(-45deg)
+}
+.avatar_in_rectangle{
+    width: 70%;
+    transform: rotate(45deg);
 }
 .acquaintance{
     /* background-color: red; */
@@ -130,4 +153,17 @@ main{
     padding: 13px 0 12px 0;
     margin: 10px;
     border-radius: 10px;
+}
+.cit p{
+    color: #C9C9C9;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 52px;
+}
+.cit q{
+    color: #FFF;
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: 500;
+    font-style: italic;
 }
