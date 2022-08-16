@@ -1,0 +1,36 @@
+@media(max-width: 506px){
+    .menu{
+        display: none;
+    }
+}
+@media(max-width: 1300px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .button_panel{
+        flex-direction: column;
+    }
+    #hire_me{
+        width: 522px;
+    }
+    #portfolio{
+        width: 522px;
+    }
+    .portfolio h2{
+        text-align: center;
+    }
+    .album-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin: 0px 0 130px 0;
+    }
+    .see-more{
+        flex-direction: column;
+    }
+}

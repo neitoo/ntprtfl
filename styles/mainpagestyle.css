@@ -1,19 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 
-@media(max-width: 506px){
-    .menu{
-        display: none;
-    }
-}
-@media(max-width: 1300px){
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-color: #2d2d2d;
@@ -108,10 +96,11 @@ main{
     line-height: 69px;
 }
 .button_panel{
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .button_panel a{
     color: #fff;
@@ -128,19 +117,25 @@ main{
     height: 29px;
 }
 #hire_me{
-    width: 46%;
+    width: 251px;
+    height: 60px;
     background: #7996FC;
     box-shadow: 0px 0px 15px rgba(121, 150, 252, 0.15);
 }
+#hire_me:hover{
+    background: #94aaf9;
+}
 #portfolio{
-    width: 46%;
+    width: 251px;
+    height: 60px;
     background: #414141;
 }
 #portfolio:hover{
     background: #7996FC;
 }
 #telegram{
-    width: 100%;
+    width: 522px;
+    height: 60px;
     background: #414141;
 }
 #telegram:hover{
@@ -249,14 +244,14 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 120px;
-    height: 310px;
+    height: 200px;
     background: #414141;
     border-radius: 50px 50px 0 0;
     bottom: 0;
 }
 .contacts,.portfolio-href,.social-media{
     width: 208px;
-    height: 200px;
+    height: 100px;
 }
 .contacts p,.portfolio-href p,.social-media p{
     flex-grow: 3;
