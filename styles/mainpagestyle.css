@@ -7,13 +7,13 @@
 }
 @media(max-width: 1300px){
     main{
-        height: 43vw;
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
         flex-wrap: wrap;
     }
+    
 }
 body{
     background-color: #2d2d2d;
@@ -46,7 +46,6 @@ header{
 }
 main{
     /* background-color:aqua; */
-    height: 43vw;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -54,8 +53,8 @@ main{
 }
 .avatar{
     /* background-color: #fff; */
-    width: 50vw;
-    height: 45vw;
+    width: 649px;
+    height: 724px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +63,6 @@ main{
     position: absolute;
     width: 649px;
     height: 665px;
-
-    /* background: radial-gradient(38.42% 38.42% at 50% 50%, #7996FC 0%, rgba(121, 150, 252, 0) 100%); */
     background: radial-gradient(40% 40% at 50% 45%, #7996FC 0%, rgba(121, 150, 252, 0) 100%);
     filter: drop-shadow(0px 0px 15px rgba(121, 150, 252, 0.15));
 }
@@ -159,6 +156,7 @@ main{
     font-size: 36px;
     font-weight: 300;
     line-height: 52px;
+    margin-bottom: 20px;
 }
 .cit q{
     color: #FFF;
@@ -166,4 +164,124 @@ main{
     line-height: 60px;
     font-weight: 500;
     font-style: italic;
+}
+.portfolio{
+    margin-top: 120px;
+    display: block;
+    justify-content: space-between;
+}
+.portfolio h2{
+    margin: 0 0 60px 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+}
+.album-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 354px;
+    height: 253px;
+    background-color: #7996FC;
+    border-radius: 15px;
+}
+.rectangle-card{
+    width: 354px;
+    height: 253px;
+    background-image:url(../source/delete.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.container-card{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.container-card p{
+    margin: 0;
+}
+.see-more{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0 0 0;
+}
+.see-more a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+
+
+    color: #C9C9C9;
+}
+.see-more a:hover{
+    color: #FFF;
+}
+#github{
+    width: 251px;
+    height: 60px;
+
+    background: #414141;
+    border-radius: 10px;
+}
+.button a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 34px;
+    justify-content: center;
+    align-items: center;
+}
+#github:hover{
+    background: #7996FC;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    height: 310px;
+    background: #414141;
+    border-radius: 50px 50px 0 0;
+    bottom: 0;
+}
+.contacts,.portfolio-href,.social-media{
+    width: 208px;
+    height: 200px;
+}
+.contacts p,.portfolio-href p,.social-media p{
+    flex-grow: 3;
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.portfolio-href a,.social-media a{
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+    color: #C9C9C9;
+}
+.portfolio-href a:hover,.social-media a:hover{
+    
+    color: #FFF;
+}
+.contacts{
+    margin-left: 10%;
+    flex-grow: 2;
+}
+.social-media{
+    margin-right: 10%;
 }
