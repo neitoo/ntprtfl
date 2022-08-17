@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 
+*{
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     background-color: #2d2d2d;
     font-family: 'Jost';
-}
-*{
-    box-sizing: border-box;
 }
 .wrapper{
     width: 80vw;
@@ -33,21 +33,19 @@ header{
     color:#fff
 }
 main{
-    /* background-color:aqua; */
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
 }
 .avatar{
-    /* background-color: #fff; */
     width: 649px;
     height: 724px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.radial_gradient{
+.radial-gradient{
     position: absolute;
     width: 649px;
     height: 665px;
@@ -60,17 +58,15 @@ main{
     height: 439.87px;
     justify-content: center;
     align-items: center;
-
     background: #FFFFFF;
     border-radius: 20%;
     transform: rotate(-45deg)
 }
-.avatar_in_rectangle{
+.avatar-in-rectangle{
     width: 70%;
     transform: rotate(45deg);
 }
 .acquaintance{
-    /* background-color: red; */
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -78,31 +74,30 @@ main{
     align-items:center;
     color: #fff;
     margin-left: 5vw;
-    
 }
 .acquaintance h1{
     font-weight:700;
     font-size: 56px;
     line-height: 81px;
 }
-.acquaintance .normal_font{
+.acquaintance .normal-font{
     font-weight: 500;
     font-size: 56px;
     line-height: 81px;
 }
-.acquaintance .my_name{
+.acquaintance .my-name{
     font-weight: 500;
     font-size: 48px;
     line-height: 69px;
 }
-.button_panel{
+.button-panel{
     width: 600px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
 }
-.button_panel a{
+.button-panel a{
     color: #fff;
     text-decoration: none;
     font-size: 24px;
@@ -116,13 +111,13 @@ main{
     width: 29px;
     height: 29px;
 }
-#hire_me{
+#hire-me{
     width: 251px;
     height: 60px;
     background: #7996FC;
     box-shadow: 0px 0px 15px rgba(121, 150, 252, 0.15);
 }
-#hire_me:hover{
+#hire-me:hover{
     background: #94aaf9;
 }
 #portfolio{
@@ -176,10 +171,19 @@ main{
     display: flex;
     justify-content: space-between;
 }
+.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 .card{
+    position: relative;
     width: 354px;
     height: 253px;
-    background-color: #7996FC;
+    background-color: #414141;
     border-radius: 15px;
 }
 .rectangle-card{
