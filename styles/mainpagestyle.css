@@ -75,20 +75,60 @@ main{
     color: #fff;
     margin-left: 5vw;
 }
-.acquaintance h1{
-    font-weight:700;
-    font-size: 56px;
-    line-height: 81px;
+.my-info{
+    width: 600px;
+    padding-bottom: 50px;
+    
 }
-.acquaintance .normal-font{
+.my-info .normal-font{
     font-weight: 500;
-    font-size: 56px;
+    font-size: 46px;
     line-height: 81px;
+    margin: 0;
+    padding: 0;
 }
-.acquaintance .my-name{
+.block-dropdown{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.block-dropdown h1{
+    font-size: 46px;
+}
+.dropdown{
+    padding: 13px 20px 12px 20px;
+    border-radius: 10px;
+    background: #414141;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.dropdown:hover{
+    background-color: #7996FC;
+}
+.dropdown-content {
+    border-radius: 10px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color:#7996FC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-info .my-name{
     font-weight: 500;
-    font-size: 48px;
-    line-height: 69px;
+    font-size: 36px;
+    line-height: 81px;
+    margin: 0;
+    padding: 0;
 }
 .button-panel{
     width: 600px;
